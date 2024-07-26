@@ -19,25 +19,25 @@ const experience = {
     {
       company: "Arizona State University",
       position: "Research Assistant",
-      duration: "August 2024 - Present",
+      duration: "2024 - Present",
     },
 
     {
       company: "Arizona State University",
       position: "Student Researcher",
-      duration: "August 2023 - April 2024",
+      duration: "2023 - 2024",
     },
 
     {
       company: "e2Serv Technologies",
       position: "Software Developer",
-      duration: "August 2021 - July 2022",
+      duration: "2021 - 2022",
     },
 
     {
       company: "Swaayatt Robots",
       position: "Deep Learning Intern",
-      duration: "January 2021 - July 2021",
+      duration: "2021",
     },
   ],
 };
@@ -48,55 +48,52 @@ const education = {
   items: [
     {
       school: "Arizona State University",
-      degree: "Master of Science in Computer Engineering",
-      duration: "August 2022 - May 2024",
+      degree: "MS in Computer Engineering",
+      duration: "2022 - 2024",
     },
 
     {
       school: "National Institute of Technology, Bhopal",
-      degree:
-        "Bachelor of Technology in Electronics and Communication Engineering",
-      duration: "August 2017 - May 2021",
+      degree: "B.Tech in Electronics and Communication Engineering",
+      duration: "2017 - 2021",
     },
   ],
 };
 
 const skills = {
   title: "Skills",
-  description:
-    "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloribus, est. ",
 
   skillList: [
     {
-      icon: <SiNextdotjs />,
+      icon: <SiNextdotjs className="text-5xl" />,
       name: "Next.js",
     },
     {
-      icon: <SiTailwindcss />,
+      icon: <SiTailwindcss className="text-5xl" />,
       name: "Tailwind CSS",
     },
     {
-      icon: <FaPython />,
+      icon: <FaPython className="text-5xl" />,
       name: "Python",
     },
     {
-      icon: <SiPytorch />,
+      icon: <SiPytorch className="text-5xl" />,
       name: "Pytorch",
     },
     {
-      icon: <FaReact />,
+      icon: <FaReact className="text-5xl" />,
       name: "React.js",
     },
     {
-      icon: <FaJs />,
+      icon: <FaJs className="text-5xl" />,
       name: "JavaScript",
     },
     {
-      icon: <FaHtml5 />,
+      icon: <FaHtml5 className="text-5xl" />,
       name: "HTML 5",
     },
     {
-      icon: <FaCss3 />,
+      icon: <FaCss3 className="text-5xl" />,
       name: "CSS 3",
     },
   ],
@@ -108,7 +105,7 @@ const page = () => {
       initial={{ opacity: 0 }}
       animate={{
         opacity: 1,
-        transition: { duration: 1.7, delay: 0.4, ease: "easeInOut" },
+        transition: { delay: 1.7, duration: 0.4, ease: "easeInOut" },
       }}
       className="min-h-[80vh] flex items-center justify-center py-12 xl:py-0"
     >
@@ -124,7 +121,98 @@ const page = () => {
           </TabsList>
 
           {/* Content */}
-          <div>content</div>
+          <div className="min-h-[70vh] w-full">
+            {/* Experience */}
+            <TabsContent value="experience" className="w-full">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                <h1 className="text-4xl font-semibold">{experience.title}</h1>
+                <ScrollArea className="h-[400px]">
+                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                    {experience.items.map((item, index) => {
+                      return (
+                        <li
+                          className="bg-[#27272c] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                          key={index}
+                        >
+                          <span className="text-accent/60">
+                            {item.duration}
+                          </span>
+                          <h3 className="text-2xl max-w-[260px] text-center lg:text-left">
+                            {item.position}
+                          </h3>
+                          <div className="flex mt-5  items-center gap-3">
+                            <span className="w-[5px] lg:w-[6px] lg:h-[6px] h-[5px] bg-accent rounded-full"></span>
+                            <p className="text-white/60">{item.company}</p>
+                          </div>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </ScrollArea>
+              </div>
+            </TabsContent>
+            {/* education */}
+            <TabsContent value="education" className="w-full">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                <h1 className="text-4xl font-semibold">{education.title}</h1>
+                <ScrollArea className="h-[400px]">
+                  <ul className="grid grid-cols-1 lg:grid-cols-2 gap-[30px]">
+                    {education.items.map((item, index) => {
+                      return (
+                        <li
+                          className="bg-[#27272c] py-6 px-10 rounded-xl flex flex-col justify-center items-center lg:items-start gap-1"
+                          key={index}
+                        >
+                          <span className="text-accent/60">
+                            {item.duration}
+                          </span>
+                          <h3 className="text-2xl max-w-[260px] text-center lg:text-left">
+                            {item.degree}
+                          </h3>
+                          <div className="flex mt-5  items-center gap-3">
+                            <span className="w-[5px] lg:w-[6px] lg:h-[6px] h-[5px] bg-accent rounded-full"></span>
+                            <p className="text-white/60">{item.school}</p>
+                          </div>
+                        </li>
+                      );
+                    })}
+                  </ul>
+                </ScrollArea>
+              </div>
+            </TabsContent>
+            {/* skills */}
+            <TabsContent value="skills" className="w-full">
+              <div className="flex flex-col gap-[30px] text-center xl:text-left">
+                <div>
+                  <h1 className="text-4xl font-semibold">{skills.title}</h1>
+                </div>
+
+                <ul className="grid grid-cols-2 lg:grid-cols-4 gap-[30px]">
+                  {skills.skillList.map((skill, index) => {
+                    return (
+                      <li
+                        key={index}
+                        className="flex flex-col items-center justify-center lg:items-start gap-1 "
+                      >
+                        <TooltipProvider>
+                          <Tooltip>
+                            <TooltipTrigger asChild>
+                              <div className=" bg-[#27272c] h-[150px] w-[150px] flex items-center justify-center rounded-xl  mx-auto">
+                                <span>{skill.icon}</span>
+                              </div>
+                            </TooltipTrigger>
+                            <TooltipContent>
+                              <p>{skill.name}</p>
+                            </TooltipContent>
+                          </Tooltip>
+                        </TooltipProvider>
+                      </li>
+                    );
+                  })}
+                </ul>
+              </div>
+            </TabsContent>
+          </div>
         </Tabs>
       </div>
     </motion.div>
