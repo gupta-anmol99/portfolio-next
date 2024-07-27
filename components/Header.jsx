@@ -19,9 +19,9 @@ const Header = () => {
         {/* Desktop Navbar */}
         <div className="hidden xl:flex items-center gap-8">
           <Nav />
-          <Link href={"resume"}>
+          {/* <Link href={"resume"}>
             <Button>Resume</Button>
-          </Link>
+          </Link> */}
         </div>
 
         {/* Mobile Navbar */}

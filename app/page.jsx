@@ -13,13 +13,12 @@ const Home = () => {
         <div className="flex flex-col xl:flex-row justify-between items-center xl:pt-8 xl:pb-24">
           {/* Text about me */}
           <div className="text-center xl:text-left order-2 xl:order-none">
-            <span className="text-xl">Software Developer</span>
+            <span className="text-xl">Roboticist & <br />Software Developer</span>
             <h1 className="h1 mb-6">
               Hi, I'm <br /> <span className="text-accent">Anmol Gupta</span>
             </h1>
             <p className="text-white/80 mb-9 max-w-[500px] text-center xl:text-left">
-              I'm a software developer based in India. I specialize in building
-              exceptional digital experiences.
+            I am a Ph.D. candidate at Arizona State University, where I work under the guidance of Dr. Nakul Gopalan. My research focuses on the integration of robotics with vision systems. Additionally, I am a software developer with experience in full-stack and mobile development. 
             </p>
             {/* Button and Socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">

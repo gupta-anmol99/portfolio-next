@@ -17,24 +17,24 @@ const works = [
     description: "Mobile app developement using React Native and expo.",
     href: "/work",
   },
+  // {
+  //   num: "03",
+  //   title: "UI/UX Design",
+  //   description: "UI/UX designing for websited and mobile apps.",
+  //   href: "/work",
+  // },
   {
     num: "03",
-    title: "UI/UX Design",
-    description: "UI/UX designing for websited and mobile apps.",
-    href: "/work",
-  },
-  {
-    num: "04",
     title: "Blog",
     description:
       "Blogs on mental health and life experiences. I write about my experiences and how I overcame them.",
     href: "/work",
   },
   {
-    num: "05",
+    num: "04",
     title: "Photo Gallery",
     description:
-      "As an avid traveller, I have collected a lot of photos. I have a gallery where I showcase my photos.",
+      "As an avid traveller, I have collected a lot of photos. Visit here to check my them out.",
     href: "/work",
   },
 ];
