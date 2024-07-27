@@ -39,7 +39,7 @@ const works = [
   },
 ];
 
-const page = () => {
+const Work = () => {
   return (
     <section className="flex flex-col min-h-[80vh] justify-center py-12 xl:py-0">
       <div className="container mx-auto">
@@ -79,4 +79,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Work;

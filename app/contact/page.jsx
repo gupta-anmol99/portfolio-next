@@ -34,7 +34,7 @@ const info = [
   },
 ];
 
-const page = () => {
+const Contact = () => {
   async function handleSubmit(event) {
     event.preventDefault();
     const formData = new FormData(event.target);
@@ -123,4 +123,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Contact;

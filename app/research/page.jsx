@@ -42,7 +42,7 @@ const papers = [
   },
 ];
 
-const page = () => {
+const Research = () => {
   const [paper, setPaper] = useState(papers[0]);
 
   const handleSlideChange = (swiper) => {
@@ -140,4 +140,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default Research;

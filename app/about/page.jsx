@@ -99,7 +99,7 @@ const skills = {
   ],
 };
 
-const page = () => {
+const About = () => {
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -219,4 +219,4 @@ const page = () => {
   );
 };
 
-export default page;
+export default About;
