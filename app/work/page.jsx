@@ -35,7 +35,7 @@ const works = [
     title: "Photo Gallery",
     description:
       "As an avid traveller, I have collected a lot of photos. Visit here to check my them out.",
-    href: "/work",
+    href: "https://500px.com/p/anmol99?view=photos",
   },
 ];
 
