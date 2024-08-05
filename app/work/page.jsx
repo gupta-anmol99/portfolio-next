@@ -59,6 +59,7 @@ const Work = () => {
                     {work.num}
                   </div>
                   <Link
+                    target="_blank"
                     href={work.href}
                     className="border rounded-full bg-white w-[60px] h-[60px] flex items-center justify-center group-hover:bg-accent hover:-rotate-45 transition-all duration-500"
                   >
