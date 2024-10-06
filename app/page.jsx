@@ -18,7 +18,7 @@ const Home = () => {
               Hi, I'm <br /> <span className="text-accent">Anmol Gupta</span>
             </h1>
             <p className="text-white/80 mb-9 max-w-[500px] text-center xl:text-left">
-            I am a Ph.D. candidate at Arizona State University, where I work under the guidance of Dr. Nakul Gopalan. My research focuses on the integration of robotics with vision systems. Additionally, I am a software developer with experience in full-stack and mobile development. 
+            I am a Ph.D. student at Arizona State University, where I work under the guidance of Dr. Nakul Gopalan. My research focuses on the integration of robotics with vision systems. Additionally, I am a software developer with experience in full-stack and mobile development. 
             </p>
             {/* Button and Socials */}
             <div className="flex flex-col xl:flex-row items-center gap-8">
